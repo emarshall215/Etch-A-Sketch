@@ -6,22 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-A-Sketch</title>
     <link rel="stylesheet" href="styles.css">
-    link
+    
 </head>
 <body>
+<div class="flex-container"></div>
+<div class="title">
     <h1>Etch-A-Sketch</h1>
-    <div class="header">
-        <h6>Select the size</h6>
-        <button class="popup">Select</button>
-    </div>
-    <div class="board">
-
-    </div>
-    <div class="footer">
-        <button onclick="" class="black-btn">Black</button>
-        <button onclick="" class="randm-btn">Random</button>
-        <button onclick="" class="clear-btn">Clear</button>
-    </div>
+</div>
+<div class="content">
+    <input type="text" placeholder="Size of board" onchange="changeSize(this.value)"> 
+    <button>Select Size</button>
+</div>
+<div class="board"></div>
+<div class="buttons">
+    <button onclick="changeColor('black')">Black</button>
+    <button onclick="changeColor('random')">Random</button>
+    <button onclick="changeColor('white')">Erase</button>
+    <button onclick="resetBoard()">Reset</button>
+</div>
     <script src="main.js"></script>
 </body>
 </html>
